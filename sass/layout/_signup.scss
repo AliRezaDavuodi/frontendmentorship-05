@@ -7,17 +7,15 @@
 
   &__left {
     width: 50%;
+    padding-left: map-get($spacing, "Big");
 
     .paragraph {
-      margin-bottom: map-get($spacing, "Large");
       margin-top: map-get($spacing, "Tiny");
+      margin-bottom: map-get($spacing, "XLarge");
     }
   }
 
   &__right {
     width: 50%;
-
-    &--img {
-    }
   }
 }

@@ -17,6 +17,10 @@ body {
   font-family: $Roboto;
 }
 
+ul {
+  list-style: none;
+}
+
 img {
   height: 100%;
   object-fit: cover;

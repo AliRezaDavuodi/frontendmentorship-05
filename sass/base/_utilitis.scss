@@ -6,3 +6,43 @@
 .btn-controller {
   @include felx_center_vertical;
 }
+
+.formcontroller {
+  border: 1px solid $dark-gray-color;
+  padding: map-get($spacing, "Tiny");
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  margin: map-get($spacing, "Large") 0;
+
+  .input {
+    height: 100%;
+    padding-left: 1rem;
+    border: none;
+    outline: none;
+    font: inherit;
+    background-color: transparent;
+
+    &::placeholder {
+      opacity: 0;
+    }
+
+    &:placeholder-shown + label {
+      left: 26%;
+      top: 50%;
+      font-size: 1.6rem;
+      color: $dark-gray-color;
+    }
+  }
+
+  .label {
+    position: absolute;
+    top: -16%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3rem;
+    color: $dark-blue-color;
+    transition: all 0.35s;
+  }
+}

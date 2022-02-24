@@ -34,6 +34,11 @@
   box-shadow: 0 0.3rem 1.5rem rgba(#000000, 0.3);
 }
 
+.btn-small {
+  padding: map-get($spacing, "Small") map-get($spacing, "Normal");
+  font-size: map-get($spacing, "Medium");
+}
+
 .btn-big {
   padding: map-get($spacing, "Large") map-get($spacing, "XXLarge");
   font-size: map-get($spacing, "Large");
