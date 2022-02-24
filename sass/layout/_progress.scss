@@ -1,4 +1,6 @@
 .progress {
+  padding: map-get($spacing, "Large");
+
   &__list {
     @include felx_center_vertical;
     justify-content: space-between;
@@ -8,15 +10,13 @@
 
   &__item {
     width: 25rem;
+    box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+    text-align: center;
 
-    &--img {
-      width: 8rem;
-      height: 8rem;
-      padding: map-get($spacing, "Medium");
-      border-radius: map-get($spacing, "Small");
-      background-color: $dark-blue-color;
+    &:nth-child(1) {
+      box-shadow: none;
+      text-align: left;
     }
-
     &:nth-child(2) {
       background-color: $light-red-color;
       .progress__item--img {
