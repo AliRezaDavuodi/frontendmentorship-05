@@ -207,6 +207,39 @@ img {
       left: -20%;
       transition: all 0.35s ease-in; }
 
+#offers-section {
+  padding: 2.369rem;
+  margin-top: 1.333rem; }
+
+.offers {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .offers-header {
+    text-align: center;
+    padding: 1.777rem; }
+  .offers__left {
+    width: 50%; }
+    .offers__left--img {
+      height: 60rem; }
+  .offers__right {
+    width: 50%; }
+  .offers__item {
+    padding: 3.157rem;
+    border-left: 0.75rem solid;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    .offers__item:nth-child(1) {
+      border-color: #f76707; }
+    .offers__item:nth-child(2) {
+      border-color: #7950f2; }
+    .offers__item:nth-child(3) {
+      border-color: #37b24d; }
+    .offers__item .h2 {
+      margin-bottom: 1.333rem; }
+    .offers__item:not(:last-child) {
+      margin-bottom: 1.777rem; }
+
 .progress {
   padding: 1.777rem; }
   .progress__list {
