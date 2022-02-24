@@ -1,5 +1,4 @@
-.features-section {
-  background-color: #ccc;
+#features-section {
   margin-top: map-get($spacing, "Bigest");
 }
 
@@ -8,21 +7,16 @@
 
   &__left {
     width: 50%;
-    padding-right: map-get($spacing, "XLarge");
-    text-align: center;
-    img {
-      width: 20rem;
-      height: 40rem;
-      margin-top: -5rem;
+
+    &--img__2 {
+      height: 35rem;
     }
   }
   &__right {
     width: 50%;
     background-color: #fff;
-    transform: scale(1.1);
-    margin-right: map-get($spacing, "XXLarge");
+
     padding: map-get($spacing, "Small");
-    padding-right: map-get($spacing, "XLarge");
   }
   &__list {
     @include felx_center_vertical;

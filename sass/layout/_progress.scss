@@ -1,6 +1,8 @@
-.progress {
+#progress {
   padding: map-get($spacing, "Large");
+}
 
+.progress {
   &__list {
     @include felx_center_vertical;
     justify-content: space-between;

@@ -55,6 +55,29 @@ img {
   display: flex;
   align-items: center; }
 
+.mr {
+  margin-right: 3.157rem; }
+
+.pr {
+  padding-right: 2.369rem; }
+
+.bg-gray {
+  background-color: #ccc; }
+
+.scale {
+  transform: scale(1.1); }
+
+.feature-img {
+  width: 20rem;
+  height: 40rem;
+  margin: auto;
+  margin-top: -5rem; }
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .btn,
 .btn::after,
 .btn::before {
@@ -118,8 +141,7 @@ img {
     padding: 1.333rem;
     border-radius: 1rem; }
 
-.features-section {
-  background-color: #ccc;
+#features-section {
   margin-top: 7.478rem; }
 
 .features {
@@ -127,20 +149,13 @@ img {
   justify-content: center;
   align-items: center; }
   .features__left {
-    width: 50%;
-    padding-right: 2.369rem;
-    text-align: center; }
-    .features__left img {
-      width: 20rem;
-      height: 40rem;
-      margin-top: -5rem; }
+    width: 50%; }
+    .features__left--img__2 {
+      height: 35rem; }
   .features__right {
     width: 50%;
     background-color: #fff;
-    transform: scale(1.1);
-    margin-right: 3.157rem;
-    padding: 1rem;
-    padding-right: 2.369rem; }
+    padding: 1rem; }
   .features__list {
     display: flex;
     align-items: center;
@@ -240,30 +255,32 @@ img {
     .offers__item:not(:last-child) {
       margin-bottom: 1.777rem; }
 
-.progress {
+#progress {
   padding: 1.777rem; }
-  .progress__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-    text-transform: capitalize; }
-  .progress__item {
-    width: 25rem;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    text-align: center; }
-    .progress__item:nth-child(1) {
-      box-shadow: none;
-      text-align: left; }
-    .progress__item:nth-child(2) {
-      background-color: #fff5f5; }
-      .progress__item:nth-child(2) .progress__item--img {
-        background-color: #fcc419; }
-    .progress__item:nth-child(3) {
-      background-color: #e3fafc; }
-      .progress__item:nth-child(3) .progress__item--img {
-        background-color: #7950f2; }
-    .progress__item:nth-child(4) {
-      background-color: #e6fcf5; }
-      .progress__item:nth-child(4) .progress__item--img {
-        background-color: #fd7e14; }
+
+.progress__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  text-transform: capitalize; }
+
+.progress__item {
+  width: 25rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  text-align: center; }
+  .progress__item:nth-child(1) {
+    box-shadow: none;
+    text-align: left; }
+  .progress__item:nth-child(2) {
+    background-color: #fff5f5; }
+    .progress__item:nth-child(2) .progress__item--img {
+      background-color: #fcc419; }
+  .progress__item:nth-child(3) {
+    background-color: #e3fafc; }
+    .progress__item:nth-child(3) .progress__item--img {
+      background-color: #7950f2; }
+  .progress__item:nth-child(4) {
+    background-color: #e6fcf5; }
+    .progress__item:nth-child(4) .progress__item--img {
+      background-color: #fd7e14; }
