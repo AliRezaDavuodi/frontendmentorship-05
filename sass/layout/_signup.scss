@@ -1,0 +1,23 @@
+#signup {
+  padding: map-get($spacing, "XXLarge") 0;
+}
+
+.signup {
+  @include flex_center;
+
+  &__left {
+    width: 50%;
+
+    .paragraph {
+      margin-bottom: map-get($spacing, "Large");
+      margin-top: map-get($spacing, "Tiny");
+    }
+  }
+
+  &__right {
+    width: 50%;
+
+    &--img {
+    }
+  }
+}

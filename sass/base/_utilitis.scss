@@ -6,30 +6,3 @@
 .btn-controller {
   @include felx_center_vertical;
 }
-
-.mr {
-  margin-right: map-get($spacing, "XXLarge");
-}
-
-.pr {
-  padding-right: map-get($spacing, "XLarge");
-}
-
-.bg-gray {
-  background-color: #ccc;
-}
-
-.scale {
-  transform: scale(1.1);
-}
-
-.feature-img {
-  width: 20rem;
-  height: 40rem;
-  margin: auto;
-  margin-top: -5rem;
-}
-
-.flex {
-  @include flex_center;
-}

@@ -1,5 +1,7 @@
 #features-section {
+  padding: map-get($spacing, "XXLarge") 0;
   margin-top: map-get($spacing, "Bigest");
+  background-color: $light-red-color;
 }
 
 .features {
@@ -8,14 +10,13 @@
   &__left {
     width: 50%;
 
-    &--img__2 {
-      height: 35rem;
+    &--img {
+      @include flex_center;
+      height: 30rem;
     }
   }
   &__right {
     width: 50%;
-    background-color: #fff;
-
     padding: map-get($spacing, "Small");
   }
   &__list {

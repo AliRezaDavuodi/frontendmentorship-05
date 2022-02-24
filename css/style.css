@@ -55,29 +55,6 @@ img {
   display: flex;
   align-items: center; }
 
-.mr {
-  margin-right: 3.157rem; }
-
-.pr {
-  padding-right: 2.369rem; }
-
-.bg-gray {
-  background-color: #ccc; }
-
-.scale {
-  transform: scale(1.1); }
-
-.feature-img {
-  width: 20rem;
-  height: 40rem;
-  margin: auto;
-  margin-top: -5rem; }
-
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
 .btn,
 .btn::after,
 .btn::before {
@@ -142,7 +119,9 @@ img {
     border-radius: 1rem; }
 
 #features-section {
-  margin-top: 7.478rem; }
+  padding: 3.157rem 0;
+  margin-top: 7.478rem;
+  background-color: #fff5f5; }
 
 .features {
   display: flex;
@@ -150,11 +129,13 @@ img {
   align-items: center; }
   .features__left {
     width: 50%; }
-    .features__left--img__2 {
-      height: 35rem; }
+    .features__left--img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30rem; }
   .features__right {
     width: 50%;
-    background-color: #fff;
     padding: 1rem; }
   .features__list {
     display: flex;
@@ -223,8 +204,7 @@ img {
       transition: all 0.35s ease-in; }
 
 #offers-section {
-  padding: 2.369rem;
-  margin-top: 1.333rem; }
+  padding: 3.157rem 0; }
 
 .offers {
   display: flex;
@@ -256,7 +236,7 @@ img {
       margin-bottom: 1.777rem; }
 
 #progress {
-  padding: 1.777rem; }
+  padding: 3.157rem 0; }
 
 .progress__list {
   display: flex;
@@ -284,3 +264,18 @@ img {
     background-color: #e6fcf5; }
     .progress__item:nth-child(4) .progress__item--img {
       background-color: #fd7e14; }
+
+#signup {
+  padding: 3.157rem 0; }
+
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .signup__left {
+    width: 50%; }
+    .signup__left .paragraph {
+      margin-bottom: 1.777rem;
+      margin-top: 0.75rem; }
+  .signup__right {
+    width: 50%; }
