@@ -1,6 +1,7 @@
 .btn,
 .btn::after,
 .btn::before {
+  text-transform: capitalize;
   display: inline-block;
   padding: map-get($spacing, "Medium") map-get($spacing, "XLarge");
   cursor: pointer;

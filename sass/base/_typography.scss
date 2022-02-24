@@ -1,0 +1,8 @@
+.h1 {
+  text-transform: capitalize;
+
+  font : {
+    size: map-get($spacing, "Big");
+    weight: 700;
+  }
+}
