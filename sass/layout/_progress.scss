@@ -1,0 +1,39 @@
+.progress {
+  &__list {
+    @include felx_center_vertical;
+    justify-content: space-between;
+    list-style: none;
+    text-transform: capitalize;
+  }
+
+  &__item {
+    width: 25rem;
+
+    &--img {
+      width: 8rem;
+      height: 8rem;
+      padding: map-get($spacing, "Medium");
+      border-radius: map-get($spacing, "Small");
+      background-color: $dark-blue-color;
+    }
+
+    &:nth-child(2) {
+      background-color: $light-red-color;
+      .progress__item--img {
+        background-color: $dark-yellow-color;
+      }
+    }
+    &:nth-child(3) {
+      background-color: $light-blue-color;
+      .progress__item--img {
+        background-color: $dark-blue-color;
+      }
+    }
+    &:nth-child(4) {
+      background-color: $lightst-blue-color;
+      .progress__item--img {
+        background-color: $dark-orange-color;
+      }
+    }
+  }
+}

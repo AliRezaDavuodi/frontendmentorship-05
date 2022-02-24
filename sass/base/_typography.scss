@@ -2,11 +2,38 @@
   color: $dark-gray-color;
 }
 
-.h1 {
+.heading {
   text-transform: capitalize;
+}
 
+.h1 {
+  letter-spacing: -3px;
+  word-spacing: 5px;
+  line-height: 1.3;
   font : {
     size: map-get($spacing, "Big");
     weight: 700;
   }
+}
+
+.h2 {
+  letter-spacing: -2px;
+  word-spacing: 5px;
+  line-height: 1.2;
+  font : {
+    size: map-get($spacing, "XXXLarge");
+    weight: 700;
+  }
+}
+.h3 {
+  letter-spacing: -1px;
+  word-spacing: 5px;
+  line-height: 1.7;
+  font : {
+    size: map-get($spacing, "Large");
+  }
+}
+
+.paragraph {
+  font-size: map-get($spacing, "Normal");
 }

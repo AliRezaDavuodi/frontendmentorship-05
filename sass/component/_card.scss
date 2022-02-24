@@ -1,0 +1,12 @@
+.card {
+  @include flex_center;
+  flex-direction: column;
+  border-radius: map-get($spacing, "Tiny");
+  padding: map-get($spacing, "XLarge");
+  box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+  text-align: center;
+
+  &__heading {
+    margin-top: map-get($spacing, "XLarge");
+  }
+}

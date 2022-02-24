@@ -21,10 +21,31 @@ img {
 .text {
   color: #495057; }
 
+.heading {
+  text-transform: capitalize; }
+
 .h1 {
-  text-transform: capitalize;
+  letter-spacing: -3px;
+  word-spacing: 5px;
+  line-height: 1.3;
   font-size: 5.61rem;
   font-weight: 700; }
+
+.h2 {
+  letter-spacing: -2px;
+  word-spacing: 5px;
+  line-height: 1.2;
+  font-size: 4.209rem;
+  font-weight: 700; }
+
+.h3 {
+  letter-spacing: -1px;
+  word-spacing: 5px;
+  line-height: 1.7;
+  font-size: 1.777rem; }
+
+.paragraph {
+  font-size: 1.433rem; }
 
 .container {
   max-width: 128rem;
@@ -82,16 +103,24 @@ img {
 .link:hover {
   color: #7950f2; }
 
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.75rem;
+  padding: 2.369rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  text-align: center; }
+  .card__heading {
+    margin-top: 2.369rem; }
+
 .hero {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .hero__heading {
-    letter-spacing: -3px;
-    word-spacing: 5px;
-    line-height: 1.3; }
-    .hero__heading span {
-      display: block; }
+  .hero__heading span {
+    display: block; }
   .hero__item {
     padding: 5.61rem 0; }
   .hero__left {
@@ -136,3 +165,31 @@ img {
       bottom: -5%;
       left: -20%;
       transition: all 0.35s ease-in; }
+
+.progress__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  text-transform: capitalize; }
+
+.progress__item {
+  width: 25rem; }
+  .progress__item--img {
+    width: 8rem;
+    height: 8rem;
+    padding: 1.333rem;
+    border-radius: 1rem;
+    background-color: #7950f2; }
+  .progress__item:nth-child(2) {
+    background-color: #fff5f5; }
+    .progress__item:nth-child(2) .progress__item--img {
+      background-color: #fcc419; }
+  .progress__item:nth-child(3) {
+    background-color: #e3fafc; }
+    .progress__item:nth-child(3) .progress__item--img {
+      background-color: #7950f2; }
+  .progress__item:nth-child(4) {
+    background-color: #e6fcf5; }
+    .progress__item:nth-child(4) .progress__item--img {
+      background-color: #fd7e14; }
