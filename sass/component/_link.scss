@@ -1,33 +1,11 @@
 .link,
 .link::after,
 .link::before {
+  position: relative;
   display: inline-block;
-  padding: map-get($spacing, "Medium") map-get($spacing, "XLarge");
-  cursor: pointer;
-  border-radius: map-get($spacing, "Tiny");
-  box-shadow: 0 0.2rem 2rem rgba(#000000, 0.2);
+  margin: 0 map-get($spacing, "Small");
+  text-decoration: none;
+  overflow: hidden;
+  color: $dark-gray-color;
   transition: all 0.35s;
-}
-
-.link,
-.link:active,
-.link:focus {
-  border: none;
-  outline: none;
-  background-color: $dark-blue-color;
-  color: $very-light-gray-color;
-  font: {
-    family: $Roboto;
-    size: map-get($spacing, "Medium");
-    weight: 500;
-  }
-}
-
-.link:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0.3rem 2rem rgba(#000000, 0.5);
-}
-
-.link-big {
-  padding: map-get($spacing, "XLarge") map-get($spacing, "XXLarge");
 }

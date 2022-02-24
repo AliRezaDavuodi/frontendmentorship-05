@@ -24,31 +24,21 @@
     }
 
     &--item:hover &--link::after {
-      width: 110%;
+      width: 140%;
     }
     &--item:hover &--link {
       color: $dark-blue-color;
     }
 
-    &--link {
-      text-decoration: none;
-      color: $dark-gray-color;
-      margin: 0 map-get($spacing, "Small");
-      position: relative;
-      overflow: hidden;
-      display: inline-block;
-      transition: all 0.35s;
-
-      &::after {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 0.3rem;
-        background-color: $dark-blue-color;
-        bottom: -5%;
-        left: -5%;
-        transition: all 0.35s ease-in;
-      }
+    &--link::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0.3rem;
+      background-color: $dark-blue-color;
+      bottom: -5%;
+      left: -20%;
+      transition: all 0.35s ease-in;
     }
   }
 }

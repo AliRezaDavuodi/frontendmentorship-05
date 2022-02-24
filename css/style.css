@@ -55,6 +55,17 @@ img {
 .btn-big {
   padding: 2.369rem 3.157rem; }
 
+.link,
+.link::after,
+.link::before {
+  position: relative;
+  display: inline-block;
+  margin: 0 1rem;
+  text-decoration: none;
+  overflow: hidden;
+  color: #495057;
+  transition: all 0.35s; }
+
 .header {
   min-height: 100vh; }
   .header__nav {
@@ -76,23 +87,15 @@ img {
       text-transform: capitalize;
       transition: all 0.35s; }
     .header__nav--item:hover .header__nav--link::after {
-      width: 110%; }
+      width: 140%; }
     .header__nav--item:hover .header__nav--link {
       color: #7950f2; }
-    .header__nav--link {
-      text-decoration: none;
-      color: #495057;
-      margin: 0 1rem;
-      position: relative;
-      overflow: hidden;
-      display: inline-block;
-      transition: all 0.35s; }
-      .header__nav--link::after {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 0.3rem;
-        background-color: #7950f2;
-        bottom: -5%;
-        left: -5%;
-        transition: all 0.35s ease-in; }
+    .header__nav--link::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0.3rem;
+      background-color: #7950f2;
+      bottom: -5%;
+      left: -20%;
+      transition: all 0.35s ease-in; }
