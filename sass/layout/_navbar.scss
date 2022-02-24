@@ -1,0 +1,54 @@
+.header {
+  min-height: 100vh;
+
+  &__nav {
+    @include felx_center_vertical;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 6.4rem;
+    padding: map-get($spacing, "Large") map-get($spacing, "Medium");
+
+    &--logo {
+      width: 10rem;
+      height: 5rem;
+    }
+    &--list {
+      @include felx_center_vertical;
+      justify-content: space-between;
+      list-style: none;
+    }
+
+    &--item {
+      text-transform: capitalize;
+      transition: all 0.35s;
+    }
+
+    &--item:hover &--link::after {
+      width: 110%;
+    }
+    &--item:hover &--link {
+      color: $dark-blue-color;
+    }
+
+    &--link {
+      text-decoration: none;
+      color: $dark-gray-color;
+      margin: 0 map-get($spacing, "Small");
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+      transition: all 0.35s;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0.3rem;
+        background-color: $dark-blue-color;
+        bottom: -5%;
+        left: -5%;
+        transition: all 0.35s ease-in;
+      }
+    }
+  }
+}

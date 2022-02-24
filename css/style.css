@@ -13,3 +13,86 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   font-family: "Roboto", sans-serif; }
+
+img {
+  height: 100%;
+  object-fit: cover; }
+
+.container {
+  max-width: 128rem;
+  margin: auto;
+  background-color: #f1f3f5; }
+
+.btn,
+.btn::after,
+.btn::before {
+  display: inline-block;
+  padding: 1.333rem 2.369rem;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.2);
+  transition: all 0.35s;
+  background-color: #7950f2;
+  color: #f1f3f5;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.333rem;
+  font-weight: 500; }
+
+.btn,
+.btn:active,
+.btn:focus {
+  border: none;
+  outline: none; }
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.3rem 1.5rem rgba(0, 0, 0, 0.5); }
+
+.btn:active {
+  transform: scale(1.03);
+  box-shadow: 0 0.3rem 1.5rem rgba(0, 0, 0, 0.3); }
+
+.btn-big {
+  padding: 2.369rem 3.157rem; }
+
+.header {
+  min-height: 100vh; }
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 6.4rem;
+    padding: 1.777rem 1.333rem; }
+    .header__nav--logo {
+      width: 10rem;
+      height: 5rem; }
+    .header__nav--list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style: none; }
+    .header__nav--item {
+      text-transform: capitalize;
+      transition: all 0.35s; }
+    .header__nav--item:hover .header__nav--link::after {
+      width: 110%; }
+    .header__nav--item:hover .header__nav--link {
+      color: #7950f2; }
+    .header__nav--link {
+      text-decoration: none;
+      color: #495057;
+      margin: 0 1rem;
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+      transition: all 0.35s; }
+      .header__nav--link::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0.3rem;
+        background-color: #7950f2;
+        bottom: -5%;
+        left: -5%;
+        transition: all 0.35s ease-in; }

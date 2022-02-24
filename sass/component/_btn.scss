@@ -1,0 +1,38 @@
+.btn,
+.btn::after,
+.btn::before {
+  display: inline-block;
+  padding: map-get($spacing, "Medium") map-get($spacing, "XLarge");
+  cursor: pointer;
+  border-radius: map-get($spacing, "Tiny");
+  box-shadow: 0 0.2rem 2rem rgba(#000000, 0.2);
+  transition: all 0.35s;
+  background-color: $dark-blue-color;
+  color: $very-light-gray-color;
+  font: {
+    family: $Roboto;
+    size: map-get($spacing, "Medium");
+    weight: 500;
+  }
+}
+
+.btn,
+.btn:active,
+.btn:focus {
+  border: none;
+  outline: none;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.3rem 1.5rem rgba(#000000, 0.5);
+}
+
+.btn:active {
+  transform: scale(1.03);
+  box-shadow: 0 0.3rem 1.5rem rgba(#000000, 0.3);
+}
+
+.btn-big {
+  padding: map-get($spacing, "XLarge") map-get($spacing, "XXLarge");
+}
