@@ -35,5 +35,6 @@
 }
 
 .btn-big {
-  padding: map-get($spacing, "XLarge") map-get($spacing, "XXLarge");
+  padding: map-get($spacing, "Large") map-get($spacing, "XXLarge");
+  font-size: map-get($spacing, "Large");
 }

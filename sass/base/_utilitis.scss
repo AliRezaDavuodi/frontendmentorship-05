@@ -2,3 +2,7 @@
   max-width: 128rem;
   margin: auto;
 }
+
+.btn-controller {
+  @include felx_center_vertical;
+}

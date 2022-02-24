@@ -18,6 +18,9 @@ img {
   height: 100%;
   object-fit: cover; }
 
+.text {
+  color: #495057; }
+
 .h1 {
   text-transform: capitalize;
   font-size: 5.61rem;
@@ -26,6 +29,10 @@ img {
 .container {
   max-width: 128rem;
   margin: auto; }
+
+.btn-controller {
+  display: flex;
+  align-items: center; }
 
 .btn,
 .btn::after,
@@ -58,7 +65,8 @@ img {
   box-shadow: 0 0.3rem 1.5rem rgba(0, 0, 0, 0.3); }
 
 .btn-big {
-  padding: 2.369rem 3.157rem; }
+  padding: 1.777rem 3.157rem;
+  font-size: 1.777rem; }
 
 .link,
 .link::after,
@@ -71,6 +79,9 @@ img {
   color: #495057;
   transition: all 0.35s; }
 
+.link:hover {
+  color: #7950f2; }
+
 .hero {
   display: flex;
   justify-content: center;
@@ -81,11 +92,17 @@ img {
     line-height: 1.3; }
     .hero__heading span {
       display: block; }
+  .hero__item {
+    padding: 5.61rem 0; }
   .hero__left {
     width: 50%; }
   .hero__right {
     text-align: right;
     width: 50%; }
+  .hero__paragraph {
+    margin-top: 0.75rem; }
+  .hero__btn--box {
+    margin-top: 1.777rem; }
 
 .header {
   min-height: 100vh; }

@@ -10,11 +10,23 @@
     }
   }
 
+  &__item {
+    padding: map-get($spacing, "Big") 0;
+  }
+
   &__left {
     width: 50%;
   }
   &__right {
     text-align: right;
     width: 50%;
+  }
+
+  &__paragraph {
+    margin-top: map-get($spacing, "Tiny");
+  }
+
+  &__btn--box {
+    margin-top: map-get($spacing, "Large");
   }
 }
