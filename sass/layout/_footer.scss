@@ -1,5 +1,5 @@
 #footer {
-  padding: map-get($spacing, "XXLarge") 0;
+  padding: map-get($spacing, "XXXLarge") 0;
   background-color: $very-light-gray-color;
 }
 
@@ -7,8 +7,14 @@
   @include flex_center;
   text-transform: capitalize;
 
+  &__logo {
+    width: 8rem;
+    height: 8rem;
+  }
+
   &__info {
     width: 20%;
+    align-self: start;
 
     .paragraph {
       margin-bottom: map-get($spacing, "Medium");
@@ -21,6 +27,7 @@
     }
 
     &--item {
+      @include flex_center;
       border: 1px solid $dark-orange-color;
       width: 3rem;
       height: 3rem;
