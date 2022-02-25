@@ -1,5 +1,5 @@
 #offers-section {
-  padding: map-get($spacing, "XXXLarge") 0;
+  padding: map-get($spacing, "Bigest") 0;
 }
 
 .offers {
@@ -7,7 +7,8 @@
 
   &-header {
     text-align: center;
-    padding: map-get($spacing, "Large");
+    padding-top: map-get($spacing, "Large");
+    padding-bottom: map-get($spacing, "Big");
   }
 
   &__left {
@@ -15,6 +16,12 @@
 
     &--img {
       height: 60rem;
+      border-radius: 50%;
+      overflow: hidden;
+      text-align: center;
+      background-color: $light-red-color;
+      margin-right: 5rem;
+      box-shadow: 0 1rem 1rem 0 rgba(#000, 0.3);
     }
   }
   &__right {
@@ -26,6 +33,13 @@
     border-left: map-get($spacing, "Tiny") solid;
     border-radius: map-get($spacing, "Small");
     box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+    cursor: pointer;
+    transition: all 0.28s;
+
+    &:hover {
+      transform: translateX(-1rem);
+      border-width: map-get($spacing, "Small");
+    }
 
     &:nth-child(1) {
       border-color: $orange-color;
