@@ -1,5 +1,7 @@
 .container {
+  padding: map-get($spacing, "Big") 0;
   max-width: 85%;
+  min-height: 80vh;
   margin: auto;
 }
 
@@ -45,4 +47,8 @@
     color: $dark-blue-color;
     transition: all 0.35s;
   }
+}
+
+.p0 {
+  padding: 0 !important;
 }

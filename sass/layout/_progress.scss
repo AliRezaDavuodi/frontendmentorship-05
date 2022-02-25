@@ -1,7 +1,3 @@
-#progress {
-  padding: map-get($spacing, "Bigest") 0;
-}
-
 .progress {
   &__list {
     @include felx_center_vertical;

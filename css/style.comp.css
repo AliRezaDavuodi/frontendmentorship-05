@@ -1,3 +1,36 @@
+@keyframes move-down {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0; }
+  70% {
+    transform: translateY(30%);
+    opacity: 0.8; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes move-right {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0; }
+  50% {
+    transform: translateX(10%);
+    opacity: 0.8; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes move-left {
+  0% {
+    transform: translateX(100%);
+    opacity: 0; }
+  50% {
+    transform: translateX(-10%);
+    opacity: 0.8; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
 *,
 *::after,
 *::before {
@@ -20,6 +53,10 @@ ul {
 img {
   height: 100%;
   object-fit: cover; }
+
+::selection {
+  background-color: #38d9a9;
+  color: white; }
 
 .text {
   color: #495057; }
@@ -153,7 +190,7 @@ img {
     border-radius: 1rem; }
 
 #features-section {
-  padding: 4.209rem 0;
+  padding: 7.478rem 0;
   margin-top: 7.478rem;
   background-color: #fff5f5; }
 
@@ -171,17 +208,17 @@ img {
       padding: 1.777rem 0; }
   .features__right {
     width: 50%;
-    padding: 1rem; }
+    padding: 1rem;
+    position: relative; }
     .features__right--top {
-      position: relative;
       z-index: 10; }
       .features__right--top::after {
         content: "";
         position: absolute;
         width: 100%;
-        height: 140%;
+        height: 150%;
         background-color: #fff;
-        top: -20%;
+        top: -25%;
         left: 0%;
         z-index: -1; }
   .features__list {
@@ -204,7 +241,7 @@ img {
   left: 1rem; }
 
 #footer {
-  padding: 4.209rem 0;
+  padding: 7.478rem 0;
   background-color: #f1f3f5; }
 
 .footer {
@@ -268,10 +305,12 @@ img {
   .hero__item {
     padding: 5.61rem 0; }
   .hero__left {
-    width: 50%; }
+    width: 50%;
+    animation: move-right 1s ease-in forwards; }
   .hero__right {
     text-align: right;
-    width: 50%; }
+    width: 50%;
+    animation: move-left 1s ease-in forwards; }
   .hero__paragraph {
     margin-top: 0.75rem; }
   .hero__btn--box {
@@ -284,7 +323,8 @@ img {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-height: 6.4rem; }
+    min-height: 6.4rem;
+    animation: move-down 1s ease-in forwards; }
     .header__nav--logo {
       width: 10rem;
       height: 5rem; }
@@ -311,7 +351,7 @@ img {
       transition: all 0.35s ease-in; }
 
 #offers-section {
-  padding: 4.209rem 0; }
+  padding: 7.478rem 0; }
 
 .offers {
   display: flex;
@@ -319,18 +359,30 @@ img {
   align-items: center; }
   .offers-header {
     text-align: center;
-    padding: 1.777rem; }
+    padding-top: 1.777rem;
+    padding-bottom: 5.61rem; }
   .offers__left {
     width: 50%; }
     .offers__left--img {
-      height: 60rem; }
+      height: 60rem;
+      border-radius: 50%;
+      overflow: hidden;
+      text-align: center;
+      background-color: #fff5f5;
+      margin-right: 5rem;
+      box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.3); }
   .offers__right {
     width: 50%; }
   .offers__item {
     padding: 3.157rem;
     border-left: 0.75rem solid;
     border-radius: 1rem;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.28s; }
+    .offers__item:hover {
+      transform: translateX(-1rem);
+      border-width: 1rem; }
     .offers__item:nth-child(1) {
       border-color: #f76707; }
     .offers__item:nth-child(2) {
@@ -343,7 +395,7 @@ img {
       margin-bottom: 1.777rem; }
 
 #progress {
-  padding: 4.209rem 0; }
+  padding: 7.478rem 0; }
 
 .progress__list {
   display: flex;
@@ -356,6 +408,15 @@ img {
   width: 25rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   text-align: center; }
+  .progress__item,
+  .progress__item > * {
+    transition: all 0.35s; }
+  .progress__item:not(:first-child) {
+    cursor: pointer; }
+    .progress__item:not(:first-child):hover {
+      transform: scale(1.05) skew(-4deg); }
+      .progress__item:not(:first-child):hover > * {
+        transform: skew(4deg); }
   .progress__item:nth-child(1) {
     box-shadow: none;
     text-align: left; }
@@ -373,7 +434,7 @@ img {
       background-color: #fd7e14; }
 
 #signup {
-  padding: 4.209rem 0; }
+  padding: 7.478rem 0; }
 
 .signup {
   display: flex;
