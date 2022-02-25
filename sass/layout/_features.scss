@@ -19,9 +19,9 @@
   &__right {
     width: 50%;
     padding: map-get($spacing, "Small");
+    position: relative;
 
     &--top {
-      position: relative;
       z-index: 10;
 
       &::after {

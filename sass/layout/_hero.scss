@@ -13,10 +13,12 @@
 
   &__left {
     width: 50%;
+    animation: move-right 1s ease-in forwards;
   }
   &__right {
     text-align: right;
     width: 50%;
+    animation: move-left 1s ease-in forwards;
   }
 
   &__paragraph {

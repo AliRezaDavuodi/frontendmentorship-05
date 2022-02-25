@@ -1,3 +1,36 @@
+@keyframes move-down {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0; }
+  70% {
+    transform: translateY(30%);
+    opacity: 0.8; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes move-right {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0; }
+  50% {
+    transform: translateX(10%);
+    opacity: 0.8; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes move-left {
+  0% {
+    transform: translateX(100%);
+    opacity: 0; }
+  50% {
+    transform: translateX(-10%);
+    opacity: 0.8; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
 *,
 *::after,
 *::before {
@@ -20,6 +53,10 @@ ul {
 img {
   height: 100%;
   object-fit: cover; }
+
+::selection {
+  background-color: #38d9a9;
+  color: white; }
 
 .text {
   color: #495057; }
@@ -171,9 +208,9 @@ img {
       padding: 1.777rem 0; }
   .features__right {
     width: 50%;
-    padding: 1rem; }
+    padding: 1rem;
+    position: relative; }
     .features__right--top {
-      position: relative;
       z-index: 10; }
       .features__right--top::after {
         content: "";
@@ -268,10 +305,12 @@ img {
   .hero__item {
     padding: 5.61rem 0; }
   .hero__left {
-    width: 50%; }
+    width: 50%;
+    animation: move-right 1s ease-in forwards; }
   .hero__right {
     text-align: right;
-    width: 50%; }
+    width: 50%;
+    animation: move-left 1s ease-in forwards; }
   .hero__paragraph {
     margin-top: 0.75rem; }
   .hero__btn--box {
@@ -284,7 +323,8 @@ img {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-height: 6.4rem; }
+    min-height: 6.4rem;
+    animation: move-down 1s ease-in forwards; }
     .header__nav--logo {
       width: 10rem;
       height: 5rem; }
@@ -368,6 +408,15 @@ img {
   width: 25rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   text-align: center; }
+  .progress__item,
+  .progress__item > * {
+    transition: all 0.35s; }
+  .progress__item:not(:first-child) {
+    cursor: pointer; }
+    .progress__item:not(:first-child):hover {
+      transform: scale(1.05) skew(-4deg); }
+      .progress__item:not(:first-child):hover > * {
+        transform: skew(4deg); }
   .progress__item:nth-child(1) {
     box-shadow: none;
     text-align: left; }

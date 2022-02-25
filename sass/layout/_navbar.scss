@@ -6,6 +6,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     min-height: 6.4rem;
+    animation: move-down 1s ease-in forwards;
 
     &--logo {
       width: 10rem;
