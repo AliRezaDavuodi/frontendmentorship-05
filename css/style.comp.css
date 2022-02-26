@@ -85,7 +85,9 @@ img {
   font-size: 1.433rem; }
 
 .container {
+  padding: 12rem 0;
   max-width: 85%;
+  min-height: 80vh;
   margin: auto; }
 
 .btn-controller {
@@ -121,6 +123,13 @@ img {
     font-size: 1.3rem;
     color: #7950f2;
     transition: all 0.35s; }
+
+.p0 {
+  padding: 0 !important; }
+
+.p2 {
+  min-height: 50vh;
+  padding: 8rem 0; }
 
 .btn,
 .btn::after,
@@ -190,8 +199,6 @@ img {
     border-radius: 1rem; }
 
 #features-section {
-  padding: 7.478rem 0;
-  margin-top: 7.478rem;
   background-color: #fff5f5; }
 
 .features {
@@ -241,7 +248,6 @@ img {
   left: 1rem; }
 
 #footer {
-  padding: 7.478rem 0;
   background-color: #f1f3f5; }
 
 .footer {
@@ -350,9 +356,6 @@ img {
       left: -20%;
       transition: all 0.35s ease-in; }
 
-#offers-section {
-  padding: 7.478rem 0; }
-
 .offers {
   display: flex;
   justify-content: center;
@@ -394,9 +397,6 @@ img {
     .offers__item:not(:last-child) {
       margin-bottom: 1.777rem; }
 
-#progress {
-  padding: 7.478rem 0; }
-
 .progress__list {
   display: flex;
   align-items: center;
@@ -432,9 +432,6 @@ img {
     background-color: #e6fcf5; }
     .progress__item:nth-child(4) .progress__item--img {
       background-color: #fd7e14; }
-
-#signup {
-  padding: 7.478rem 0; }
 
 .signup {
   display: flex;

@@ -1,11 +1,10 @@
 .header {
-  min-height: 100vh;
-
+  padding: 1rem 0;
   &__nav {
     @include felx_center_vertical;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-height: 6.4rem;
+    height: 10vh;
     animation: move-down 1s ease-in forwards;
 
     &--logo {

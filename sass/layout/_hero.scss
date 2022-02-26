@@ -1,5 +1,6 @@
 .hero {
-  @include flex_center;
+  @include felx_center_vertical;
+  justify-content: space-between;
 
   &__heading {
     span {
@@ -12,13 +13,17 @@
   }
 
   &__left {
-    width: 50%;
     animation: move-right 1s ease-in forwards;
   }
   &__right {
     text-align: right;
-    width: 50%;
     animation: move-left 1s ease-in forwards;
+
+    img {
+      display: block;
+      object-fit: cover;
+      transform: scale(1.1);
+    }
   }
 
   &__paragraph {

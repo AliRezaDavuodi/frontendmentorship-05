@@ -1,7 +1,6 @@
 .container {
-  padding: map-get($spacing, "Big") 0;
-  max-width: 85%;
-  min-height: 80vh;
+  padding: 5rem 0 8rem;
+  max-width: 80%;
   margin: auto;
 }
 
@@ -51,4 +50,9 @@
 
 .p0 {
   padding: 0 !important;
+}
+
+.p2 {
+  min-height: 50vh;
+  padding: 8rem 0;
 }
