@@ -85,9 +85,8 @@ img {
   font-size: 1.433rem; }
 
 .container {
-  padding: 12rem 0;
+  padding: 5rem 0 8rem;
   max-width: 85%;
-  min-height: 80vh;
   margin: auto; }
 
 .btn-controller {
@@ -304,32 +303,34 @@ img {
 
 .hero {
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-between; }
   .hero__heading span {
     display: block; }
   .hero__item {
     padding: 5.61rem 0; }
   .hero__left {
-    width: 50%;
     animation: move-right 1s ease-in forwards; }
   .hero__right {
     text-align: right;
-    width: 50%;
     animation: move-left 1s ease-in forwards; }
+    .hero__right img {
+      display: block;
+      object-fit: cover;
+      transform: scale(1.1); }
   .hero__paragraph {
     margin-top: 0.75rem; }
   .hero__btn--box {
     margin-top: 1.777rem; }
 
 .header {
-  min-height: 100vh; }
+  padding: 1rem 0; }
   .header__nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-height: 6.4rem;
+    height: 10vh;
     animation: move-down 1s ease-in forwards; }
     .header__nav--logo {
       width: 10rem;
